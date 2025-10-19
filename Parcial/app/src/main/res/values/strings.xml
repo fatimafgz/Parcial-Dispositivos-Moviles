@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Juego de Colores</string>
+
+    <!-- Welcome Fragment -->
+    <string name="welcome_title">Juego de Colores</string>
+    <string name="welcome_message">¡Bienvenido al juego de colores!</string>
+    <string name="start_game">Iniciar Juego</string>
+    <string name="game_rules_title">Reglas del Juego</string>
+    <string name="game_rules_message">• Tienes 30 segundos\n• Presiona el botón que coincida con el color mostrado\n• Cada acierto suma 1 punto\n• ¡Obtén la mayor puntuación posible!</string>
+
+    <!-- Game Fragment -->
+    <string name="score">Puntaje: %d</string>
+    <string name="time_left">Tiempo: %ds</string>
+    <string name="target_color">Color a encontrar</string>
+    <string name="score_format">Puntos: %d</string>
+    <string name="time_format">Tiempo: %ds</string>
+
+    <!-- Result Fragment -->
+    <string name="final_score">Puntaje Final: %d</string>
+    <string name="high_score">Mejor Puntaje: %d</string>
+    <string name="play_again">Jugar Otra Vez</string>
+    <string name="score_history">Historial de Puntajes</string>
+    <string name="final_score_format">Puntaje Final: %d</string>
+    <string name="high_score_format">Mejor Puntaje: %d</string>
+
+    <!-- Colores -->
+    <string name="color_red">Rojo</string>
+    <string name="color_green">Verde</string>
+    <string name="color_blue">Azul</string>
+    <string name="color_yellow">Amarillo</string>
+    <string name="color_purple">Morado</string>
+    <string name="color_orange">Naranja</string>
+
+    <!-- Item Score -->
+    <string name="default_score_number">1.</string>
+    <string name="default_score_value">100</string>
+    <string name="score_number_format">%d.</string>
+
+</resources>

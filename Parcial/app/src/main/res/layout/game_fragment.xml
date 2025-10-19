@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_left"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/targetColorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/target_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreTextView" />
+
+    <View
+        android:id="@+id/targetColorView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@color/color_red"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/targetColorLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <GridLayout
+        android:id="@+id/colorButtonsGrid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/targetColorView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/redButton"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/color_red"
+            android:text="@string/color_red"
+            android:textColor="@color/white"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/greenButton"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/color_green"
+            android:text="@string/color_green"
+            android:textColor="@color/white"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/blueButton"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/color_blue"
+            android:text="@string/color_blue"
+            android:textColor="@color/white"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/yellowButton"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/color_yellow"
+            android:text="@string/color_yellow"
+            android:textColor="@color/black"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/purpleButton"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/color_purple"
+            android:text="@string/color_purple"
+            android:textColor="@color/white"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/orangeButton"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/color_orange"
+            android:text="@string/color_orange"
+            android:textColor="@color/white"
+            android:layout_margin="8dp" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
